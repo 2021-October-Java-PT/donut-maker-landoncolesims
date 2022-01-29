@@ -2,12 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Clicker</title>
   </head>
+  <!-- <header class = "header">
+    <div class="menu">
+      <ul class="menu-list">
+        <li class = "AboutDropDown">
+          <div class = "dropdown">
+            About
+            <div class="dropdown-content-about">
+              <div class="desc">
+                Fred the baker baking company is out here making donuts dont you know?
+                We make all the donuts. We make so many donuts you wouldnt even believe it.
+                Thats all you need to know isnt it? We make donuts. You buy them. See you here.
+                </div>
+            </div>
+        </div>
+        </li>
+        <li id = "inspiration">Inspiration</li>
+        <li class = "ContactDropDown">Contact</li>
+      </ul>
+    </div>
+  </header> -->
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class = "header">
+      <h1>
+      <div class = "dropdown">
+        About
+        <div class="dropdown-content-about">
+          <p class="desc">
+            Fred the baker baking company is out here making donuts dont you know?
+            We make all the donuts. We make so many donuts you wouldnt even believe it.
+            Thats all you need to know isnt it? We make donuts. You buy them. See you here.
+          </p>
+        </div>
+      </div>
+      </h1>
+      <h3 class = "Contact">Contact</h3>
+      <h2 id = "inspiration">Inspiration</h2>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <div class ="container">
+      <main>
+          <section class = "Donut">
+            <!--maybe wrap in a figure of the the donut image-->
+            <button class = "DonutClicker" id="makeDonuts">
+              <img class = "donut-image" src="Donut.jpeg" alt="Donut Image">
+            </button>
+              <section class = "Score">
+
+              <p id="numOfDonuts">Number of Donuts: <span id="donutCounter">0</span></p>
+              <p id="numOfDonutsPerClick">Donuts Per Click: <span id="donutsPerClick">1000</span></p>
+              <p id="numOfDonutsPerSecond">Donuts Per Second: <span id="donutsPerSecond">0</span></p>
+              </section>
+          </section>
+          <input type="button" value="Act like I didnt take a three hour lunch clicking" onClick="window.location.reload(true)">
+      </main>
+      <footer class = "footer">
+        <section class = "AutoClicker">
+          <button id="purchaseAutoClicker">Purchae Auto Clickers</button>
+          <p>Number of Auto-Clickers Purchased: <span id="autoClickerCounter">0</span></p>
+          <p id = "costOfAutoClicker">Cost of Auto Clicker: <span id="clickerCost">100</span></p>
+          <p id = "costOfAutoClickerinCLicks">Cost of Auto Clicker in Clicks: <span id="clickerCostClicks">100</span></p>
+
+        </section>
+        <section class = "Multipliers">
+          <button id="purchaseMultiplier">Purchase Multiplier</button>
+          <p>Number of Multipliers Purchaed: <span id="numberOfMultipliers">0</span></p>
+          <p id = "costOfMultiplier">Cost of Multiplier: <span id="multCost">10</span></p>
+          <p id = "currentMultiplier">Multiplier Value: <span id="multValue">1</span></p>
+          <p id = "costOfMultiplierinCLicks">Cost of Multiplier in Clicks: <span id="multiplierCostClicks">10</span></p>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>

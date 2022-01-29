@@ -1,0 +1,113 @@
+*{
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Georgia, Times;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+
+}
+
+.header{
+    display: flex;
+    font-size: medium;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.menu {
+    text-align: left;
+    padding-left: 30px;
+    background-color: aqua;
+
+}
+.menu-list{
+    background-color: aqua;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    margin: .5rem;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+    text-decoration: none;
+}
+
+.Donut{
+    align-items: center;
+}
+
+.DonutClicker{
+    border-radius: 100%;
+    border-width: 0;
+    align-content: center;
+}
+
+.donut-image{
+    border-radius: 100%;
+    max-width: 15rem;
+}
+
+.AutoClicker{
+    padding: 30px 30px 30px 30px;
+}
+.Multipliers{
+    padding: 30px 30px 30px 30px;
+}
+.Score{
+    padding: 30px 30px 30px 30px;
+}
+
+.menu-list li {
+    display: inline-block;
+    border-radius: 5%;
+    border-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content-about{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -8px;
+    background-color: #f9f9f9;
+    min-width: 40rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content-about {
+    display: block;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
